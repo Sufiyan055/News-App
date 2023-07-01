@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <title>News views</title>
+  </head>
+  <body>
+    <!------------------------- Navbar ------------------------>
+
+    <nav id="main-divtop">
+      <div class="main-nav" id="main-nav">
+        <a href="#" onclick="reload()"
+          ><h2>News</h2>
+          <p>views</p></a
+        >
+        <span
+          class="material-symbols-outlined menuclas"
+          id="menubar"
+          onclick="menubar()"
+          id="menubaricon"
+        >
+          menu
+        </span>
+        <div class="nav-links" id="menuulbar">
+          <ul id="ulBarForTop">
+            <li
+              class="hover-link nav-item"
+              id="business"
+              onclick="onNavItemClick('business')"
+            >
+              Business
+            </li>
+            <li
+              class="hover-link nav-item"
+              id="technology"
+              onclick="onNavItemClick('technology')"
+            >
+              Technology
+            </li>
+            <li
+              class="hover-link nav-item"
+              id="science"
+              onclick="onNavItemClick('science')"
+            >
+              Science
+            </li>
+            <li
+              class="hover-link nav-item"
+              id="entertainment"
+              onclick="onNavItemClick('entertainment')"
+            >
+              Entertainment
+            </li>
+            <li
+              class="hover-link nav-item"
+              id="sports"
+              onclick="onNavItemClick('sports')"
+            >
+              Sports
+            </li>
+            <li
+              class="hover-link nav-item"
+              id="politics"
+              onclick="onNavItemClick('politics')"
+            >
+              Politics
+            </li>
+          </ul>
+        </div>
+        <div class="search-bar">
+          <input
+            id="search-text"
+            type="text"
+            class="news-input"
+            placeholder="e.g science"
+          />
+          <button class="search-button" id="search-button">Search</button>
+        </div>
+        <!--  -->
+        <!--     <span class="material-symbols-outlined light-mode" id="LightModeIcon">
+          light_mode
+        </span> -->
+        <!--  -->
+      </div>
+    </nav>
+
+    <!------------------------- Navbar ------------------------>
+    <!-- go top top  -->
+    <div id="gotoTop"><a href="#main-divtop" id="atopnav">Top</a></div>
+    <!-- go top top  -->
+    <!------------------------ News Area ---------------------->
+    <main id="mainbgNews">
+      <div class="card-container container flex" id="cards-container"></div>
+    </main>
+
+    <template id="template-news-card">
+      <div class="card">
+        <div class="card-header">
+          <img
+            src="https://via.placeholder.com/400x200"
+            alt="News image"
+            id="news-img"
+          />
+        </div>
+        <div class="card-content">
+          <h3 id="news-title">This is the Title</h3>
+          <h6 class="news-source" id="news-source">End Gadget 25/10/2023</h6>
+          <p class="news-desc" id="news-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+            aperiam molestiae tempore, libero non nisi nulla. Maxime obcaecati
+            non sit ex beatae, quia fugiat nemo quo optio adipisci quaerat
+            excepturi.
+          </p>
+        </div>
+      </div>
+    </template>
+    <!------------------------ News Area ---------------------->
+
+    <script src="script.js"></script>
+  </body>
+</html>
